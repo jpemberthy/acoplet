@@ -14,7 +14,7 @@ role :web, "201.232.143.199"
 role :db,  "201.232.143.199", :primary => true
 
 set :runner, user
-det :admin_runner, user
+set :admin_runner, user
 
 namespace :deploy do
   task :start, :roles => [:web, :app] do
