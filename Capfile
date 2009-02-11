@@ -41,8 +41,4 @@ namespace :acoplet do
   task :log do
     run "cat #{deploy_to}/current/log/thin.log"
   end
-  
-  task :rm do
-    run "rm -r * /home/#{application}/www/"
-  end
 end

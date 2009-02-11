@@ -1,10 +1,9 @@
 require 'rubygems'
 require 'sinatra'
 
-Sinatra::Application.default_options.merge!(
-  :run => false,
-  :env => :production
-)
+set :environment, :production
+set :port, 8000
+disable :run, :reload
 
 require 'acoplet'
 
