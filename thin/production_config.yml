@@ -3,7 +3,7 @@ chdir: /home/acoplet/www/acoplet/current/
 address: 127.0.0.1
 user: acoplet
 group: acoplet
-port: 4567
+port: 8000
 pid: /home/acoplet/www/acoplet/current/tmp/thin.pid
 rackup: /home/acoplet/www/acoplet/current/config.ru
 log: /home/acoplet/www/acoplet/current/log/thin.log
