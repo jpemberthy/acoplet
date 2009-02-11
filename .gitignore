@@ -4,3 +4,4 @@ tmp/*
 .DS_Store
 thin/development_config.yml
 nohup.out
+thin/production_test.yml

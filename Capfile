@@ -39,6 +39,6 @@ end
 
 namespace :acoplet do
   task :log do
-    run "cat #{deploy_to}/current/nohup.out"
+    run "cat #{deploy_to}/current/log/thin.log"
   end
 end
