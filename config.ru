@@ -1,5 +1,11 @@
-require 'acoplet'
+require 'rubygems'
+require 'sinatra'
 
-set :environment, :production
+Sinatra::Application.default_options.merge!(
+  :run => false,
+  :env => :production
+)
+
+require 'acoplet'
 
 run Sinatra::Application
