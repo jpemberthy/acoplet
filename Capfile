@@ -36,4 +36,9 @@ namespace :deploy do
     deploy.start
   end
 end
-  
+
+namespace :acoplet do
+  task :log do
+    run "cat #{deploy_to}/current/nohup.out"
+  end
+end

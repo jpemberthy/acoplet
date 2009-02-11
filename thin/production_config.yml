@@ -1,8 +1,8 @@
 environment: production
 chdir: /home/acoplet/www/acoplet/current/
 address: 127.0.0.1
-user: root
-group: root
+user: acoplet
+group: acoplet
 port: 4567
 pid: /home/acoplet/www/acoplet/current/tmp/thin.pid
 rackup: /home/acoplet/www/acoplet/current/config.ru
