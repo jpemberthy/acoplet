@@ -1,0 +1,17 @@
+<div id="main-navigation">
+   <ul>
+	 <% from = request.path_info; li_class = '' %>
+	 <% from == '/' ? li_class = 'active' : li_class %>
+	 <li class= <%= li_class %>> <a href="/">Home</a></li>
+	 <% li_class = '' %>
+     <% from == '/products' ? li_class = 'active' : li_class %>
+	 <li class= <%= li_class %>> <a href="/products">Our products</a></li>
+	 <% li_class = '' %>
+	 <% from == '/blog' ? li_class = 'active' : li_class %>
+     <li class= <%= li_class %>> <a href="/blog">Company blog</a></li>
+	 <% li_class = '' %>
+	 <% from == '/contact' ? li_class = 'active' : li_class %>
+     <li class= <%= li_class %>> <a href="/contact">Contact us</a></li>
+   </ul>
+   <div class="clear"></div>
+ </div>
