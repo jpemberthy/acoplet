@@ -43,6 +43,10 @@ hr {
   margin-left: 15px;
 }
 
+#main .block .content h4 {
+  margin-left: 15px;
+}
+
 #sidebar .block {
   background: #FFF;
 }

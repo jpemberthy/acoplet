@@ -21,3 +21,9 @@ end
 get '/contact' do
   erb :contact
 end
+
+post '/send_message' do
+  params.inspect
+  #flash :success
+  #redirect_to /contacts
+end
