@@ -1,30 +1,37 @@
+<script type="text/javascript" charset="utf-8" src="javascripts/jquery.validate.js"></script>
+<script type="text/javascript" charset="utf-8">
+ $(document).ready(function(){
+   $("#contactForm").validate();
+ });
+</script>
+
 <div class="block">
 	<h3> oh hai</h3>       
    <div class="content">
      <h4>Fill the form below or send us a mail to <a href="mailto:info@acoplet.com">info@acoplet.com</a></h4>
      <div class="inner">
-       <form action="/send_message" method="post" accept-chartset="utf-8" class="form">
+       <form id='contactForm' action="/send_message" method="post" accept-chartset="utf-8" class="form">
          <div class="columns">
            <div class="column left">
              <div class="group">
                <label class="label">Your Name:</label>
-               <input name='name' type="text" class="text" />
+               <input name='name' type="text" class="text required" maxlength="40" />
              </div>
 			 <div class="group">
                <label class="label">Your email address:</label>
-               <input name='email' type="text" class="text" />
+               <input name='email' type="text" class="text required email" maxlength="40" />
              </div>
 			 <div class="group">
                <label class="label">Company name:</label>
-               <input name='company' type="text" class="text" />
+               <input name='company' type="text" class="text" maxlength="40" />
              </div>
 			 <div class="group">
                <label class="label">Web page:</label>
-               <input name='web' type="text" class="text" />
+               <input name='web' type="text" class="text url" maxlength="50"/>
              </div>
              <div class="group">
                <label class="label">Message: </label>
-               <textarea name='message' class="textarea" rows="10" cols="80"></textarea>
+               <textarea name='message' class="textarea required" rows="10" cols="80"></textarea>
              </div>              
            </div>
            <div class="column right">
