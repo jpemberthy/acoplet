@@ -9,9 +9,9 @@ set :repository,  "git@github.com:jpemberthy/acoplet.git"
 set :deploy_via, :remote_cache
 set :deploy_to, "/home/#{user}/www/#{application}"
 
-role :app, "201.232.143.199"
-role :web, "201.232.143.199"
-role :db,  "201.232.143.199", :primary => true
+role :app, "190.249.28.7"
+role :web, "190.249.28.7"
+role :db,  "190.249.28.7", :primary => true
 
 set :runner, user
 set :admin_runner, user
